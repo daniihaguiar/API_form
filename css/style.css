@@ -3,7 +3,24 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid; 
+    grid-template-columns: 20% 5% 50% 5% 20%;
+    grid-template-rows: repeat(4,200px); 
+    background-color: rgb(255, 255, 255); 
+    gap: 40px; 
+    grid-template-areas:'. . . .'
+                        'gif . . .'
+                        '. form form .'
+                        '. . . .'; 
+}
+.glob {
+    grid-area: gif;
+}
+
 .main {
+    grid-area: form;
+    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,10 +30,10 @@
     width: 20%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #e6607da5;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px #a25dfc95 ;
 }
 
 h1 {
@@ -32,12 +49,12 @@ input[type="text"] {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #F5DD43;
     border-radius: 5px;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #5AAAF2;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -46,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2a76b8;
 }
 
 #address-info {
