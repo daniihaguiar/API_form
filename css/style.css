@@ -3,24 +3,15 @@
     box-sizing: border-box;
 }
 
-body {
-    display: grid; 
-    grid-template-columns: 20% 5% 50% 5% 20%;
-    grid-template-rows: repeat(4,200px); 
-    background-color: rgb(255, 255, 255); 
-    gap: 40px; 
-    grid-template-areas:'. . . .'
-                        'gif . . .'
-                        '. form form .'
-                        '. . . .'; 
-}
 .glob {
-    grid-area: gif;
+    width: 150px;
+    margin-top: 10rem;
+    margin-left: 10rem;
 }
 
 .main {
-    grid-area: form;
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-left: -3rem;
     display: flex;
     align-items: center;
     justify-content: center;
